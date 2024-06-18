@@ -3,10 +3,10 @@
 Run like this:
 >> gradio writing_assistant/app.py."""
 import gradio as gr
-from langchain.chat_models import ChatOpenAI
-from langchain.schema import SystemMessage, HumanMessage
 
 from config import set_environment
+from langchain_core.messages import HumanMessage, SystemMessage
+from langchain_openai import ChatOpenAI
 
 
 set_environment()

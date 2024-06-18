@@ -2,11 +2,11 @@ from typing import Literal
 
 from langchain.agents import initialize_agent, load_tools, AgentType
 from langchain.chains.base import Chain
-from langchain.chat_models import ChatOpenAI
 from langchain_experimental.plan_and_execute import (
     load_chat_planner, load_agent_executor, PlanAndExecute
 )
 from config import set_environment
+from langchain_openai import ChatOpenAI
 
 
 set_environment()

@@ -11,10 +11,10 @@ from typing import Literal
 import pip
 from langchain import LLMChain, PromptTemplate
 from langchain.chains.base import Chain
-from langchain.llms import FakeListLLM
 from langchain.tools.python.tool import sanitize_input
 from pip._internal.exceptions import InstallationError
 from pydantic import BaseModel, Field
+from langchain_community.llms import FakeListLLM
 
 logging.basicConfig(encoding="utf-8", level=logging.INFO)
 DEV_PROMPT = (

@@ -6,11 +6,11 @@ create_benchmark to create the benchmark dataset.
 import os
 
 from langchain import LLMChain
-from langchain.chat_models import ChatOpenAI
 from langchain.smith import RunEvalConfig, run_on_dataset
 from langsmith import Client
 
 from config import set_environment
+from langchain_openai import ChatOpenAI
 
 set_environment()
 os.environ["LANGCHAIN_TRACING_V2"] = "true"

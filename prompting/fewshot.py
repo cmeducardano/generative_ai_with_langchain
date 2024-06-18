@@ -1,10 +1,9 @@
 from langchain import PromptTemplate, FewShotPromptTemplate
-from langchain.embeddings import OpenAIEmbeddings
-from langchain.prompts.example_selector import SemanticSimilarityExampleSelector
-from langchain.chat_models import ChatOpenAI
-from langchain.vectorstores import Chroma
 
 from config import set_environment
+from langchain_community.vectorstores import Chroma
+from langchain_core.example_selectors import SemanticSimilarityExampleSelector
+from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 
 set_environment()
 

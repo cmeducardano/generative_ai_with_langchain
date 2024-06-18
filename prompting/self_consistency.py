@@ -1,8 +1,8 @@
 from langchain import PromptTemplate, LLMChain
 from langchain.chains import SequentialChain
-from langchain.chat_models import ChatOpenAI
 
 from config import set_environment
+from langchain_openai import ChatOpenAI
 
 set_environment()
 

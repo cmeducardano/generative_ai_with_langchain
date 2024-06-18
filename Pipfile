@@ -1,0 +1,50 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+jupyter = "*"
+jupyterlab = "*"
+langchain-experimental = "*"
+langsmith = "*"
+huggingface-hub = "*"
+openai = "*"
+google-cloud-aiplatform = "*"
+google-generativeai = "*"
+replicate = "*"
+ruff = "*"
+pypdf = "*"
+tiktoken = "*"
+duckduckgo-search = "*"
+streamlit = "*"
+arxiv = "*"
+wikipedia = "*"
+wolframalpha = "*"
+unstructured = "*"
+pandoc = "*"
+sentence-transformers = "*"
+gradio = "*"
+gpt4all = "*"
+google-api-python-client = "*"
+apify-client = "*"
+chromadb = "*"
+lanarky = "*"
+faiss-cpu = "*"
+promptwatch = "*"
+langchain-decorators = "*"
+fastapi = "*"
+starlette = "*"
+pandas = "*"
+numpy = "*"
+beautifulsoup4 = "*"
+requests = "*"
+pydantic = "*"
+langchain = {extras = ["docarray"], version = "*"}
+ray = {extras = ["serve"], version = "*"}
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"
+python_full_version = "3.12.4"

@@ -10,16 +10,16 @@ from langchain.chains import (
     SequentialChain,
 )
 from langchain.chains.base import Chain
-from langchain.chat_models import ChatOpenAI
-from langchain.embeddings import OpenAIEmbeddings
 from langchain.retrievers import ContextualCompressionRetriever
 from langchain.retrievers.document_compressors import EmbeddingsFilter
-from langchain.schema import BaseRetriever, Document
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.vectorstores import DocArrayInMemorySearch
 
 from chat_with_retrieval.utils import MEMORY, load_document
 from config import set_environment
+from langchain_community.vectorstores import DocArrayInMemorySearch
+from langchain_core.documents import Document
+from langchain_core.retrievers import BaseRetriever
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 
 logging.basicConfig(encoding="utf-8", level=logging.INFO)
 LOGGER = logging.getLogger()

@@ -8,15 +8,15 @@ import os
 from pathlib import Path
 
 from langchain.chains import LLMChain
-from langchain.prompts import PromptTemplate
-from langchain.callbacks import get_openai_callback
 from langchain.chains.summarize import load_summarize_chain
-from langchain.chat_models import ChatOpenAI
-from langchain.document_loaders import PyPDFLoader
-from langchain.schema import Document
 
 from config import set_environment
 from summarize import prompts
+from langchain_community.callbacks import get_openai_callback
+from langchain_community.document_loaders import PyPDFLoader
+from langchain_core.documents import Document
+from langchain_core.prompts import PromptTemplate
+from langchain_openai import ChatOpenAI
 
 set_environment()
 

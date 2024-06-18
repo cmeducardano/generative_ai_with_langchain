@@ -12,11 +12,11 @@ import time
 
 import requests
 from fastapi import FastAPI
-from langchain.vectorstores import FAISS
 from ray import serve
 
 from config import set_environment
 from search_engine.utils import INDEX_PATH, get_embeddings
+from langchain_community.vectorstores import FAISS
 
 # set keys:
 set_environment()

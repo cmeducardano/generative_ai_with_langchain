@@ -5,11 +5,11 @@ The example CV is from https://github.com/xitanggg/open-resume.
 from typing import Optional
 
 from langchain.chains import create_extraction_chain_pydantic
-from langchain.chat_models import ChatOpenAI
-from langchain.document_loaders import PyPDFLoader
 from pydantic import BaseModel, Field
 
 from config import set_environment
+from langchain_community.document_loaders import PyPDFLoader
+from langchain_openai import ChatOpenAI
 
 set_environment()
 

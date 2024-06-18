@@ -3,13 +3,13 @@ Adapted from https://github.com/ajndkr/lanarky/blob/main/examples/app/conversati
 """
 from fastapi import FastAPI
 from langchain import ConversationChain
-from langchain.chat_models import ChatOpenAI
 
 from lanarky import LangchainRouter
 from starlette.requests import Request
 from starlette.templating import Jinja2Templates
 
 from config import set_environment
+from langchain_openai import ChatOpenAI
 
 set_environment()
 

@@ -6,15 +6,9 @@ I decorate for caching, I get streamlit init errors.
 import logging
 import pathlib
 from typing import Any
-
-from langchain.document_loaders import (
-    PyPDFLoader,
-    TextLoader,
-    UnstructuredEPubLoader,
-    UnstructuredWordDocumentLoader,
-)
 from langchain.memory import ConversationBufferMemory
-from langchain.schema import Document
+from langchain_community.document_loaders import PyPDFLoader, TextLoader, UnstructuredEPubLoader, UnstructuredWordDocumentLoader
+from langchain_core.documents import Document
 
 
 def init_memory():
